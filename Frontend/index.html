@@ -1,0 +1,1497 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce Website</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="Home.js"></script>
+    <link rel="stylesheet" href="home.css" />
+  </head>
+  
+  <section>
+    <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="Assets/sv.png" alt="Logo" height="60">
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarText">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown d-flex align-items-center me-2">
+              <i class="bi bi-translate"></i>
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Language
+              </a>
+              <ul class="dropdown-menu z-3">
+                <li><a class="dropdown-item" href="#">Arabic</a></li>
+                <li><a class="dropdown-item" href="#">English</a></li>
+              </ul>
+            </li>
+            <li class="nav-item d-flex align-items-center">
+              <i class="bi bi-geo-alt"></i>
+              <a class="nav-link" aria-current="page" href="#">Hawally, Kuwait</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item d-flex align-items-center">
+              <i class="bi bi-whatsapp"></i>
+              <a class="nav-link" aria-current="page" href="#">Chat Support</a>
+            </li>
+            <li class="nav-item d-flex align-items-center">
+              <i class="bi bi-phone"></i>
+              <a class="nav-link" aria-current="page" href="#">Download Our App</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </section>
+
+  <nav
+    class="navbar navbar-expand-lg navbar-light bg-secondary-subtle sticky-top z-2"
+    >
+    <div class="container-fluid">
+      <!-- Left Side: Dropdown Menu -->
+      <div class="dropdown">
+        <button
+          class="btn bg-danger dropdown-toggle text-white"
+          type="button"
+          id="dropdownMenuButton"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+         <i class="bi bi-list-ul me-1"></i>
+          All Categories
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <li><a class="dropdown-item" href="#">Brands</a></li>
+          <li><a class="dropdown-item" href="#">Laptops</a></li>
+          <li><a class="dropdown-item" href="#">Mobiles</a></li>
+          <li><a class="dropdown-item" href="#">Desktops</a></li>
+          <li><a class="dropdown-item" href="#">Gaming</a></li>
+          <li><a class="dropdown-item" href="#">Accessories</a></li>
+          <li><a class="dropdown-item" href="#">Printers</a></li>
+          <li><a class="dropdown-item" href="#">Gadgets</a></li>
+        </ul>
+      </div>
+    
+      <!-- Center: Search Bar -->
+    
+      <form action="#" class="d-flex mx-auto" style="width: 60%">
+        <div class="input-group">
+          <input
+            class="form-control rounded"
+            type="search"
+            placeholder="Search for products ..."
+            aria-label="Search"
+            style="height: 100%"
+            aria-describedby="button-addon2"
+          />
+          <span class="input-group-append">
+            <button
+              class="btn bg-white border border-start-0 ms-n10 rounded-0 rounded-end"
+              style="margin-left: -40px"
+              type="submit"
+              id="button-addon2"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-search"
+              >
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </span>
+        </div>
+      </form>
+    
+      <!-- Right Side: Profile and Cart Icons -->
+      <div class=" align-items-center">
+        <ul class="navbar-nav ms-auto mb-0">
+          <li class="nav-item me-2">
+            <a class="nav-link" href="#">
+              <i class="bi bi-person" style="font-size: 1.2rem"></i> Profile
+            </a>
+          </li>
+          <li class="nav-item me-2">
+            <a class="nav-link" href="#">
+              <i class="bi bi-cart" style="font-size: 1.2rem"></i> Cart
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </nav>
+  
+    
+    <div class="scrolling-title d-flex justify-content-between align-items-center bg-danger text-white">
+      
+      <h6 class="m-auto p-2" id="scrolling-text"><i class="bi bi-truck"></i> Free Delivery Above 10KD </h6>
+    </div>
+
+    <!-- data-bs-ride="carousel" data-bs-interval="5000" -->
+ <!--****Deals Section******-->
+   <div>
+   <div class="position-relative">
+    <!-- Previous button -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+
+    <!-- Next button -->
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+
+
+    <!-- Carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/Frontend/Assets/desktop-1800x320_1_73.webp" class="d-block w-100" alt="Apple Vision Pro">
+        </div>
+        <div class="carousel-item">
+          <img src="/Frontend/Assets/desktop-Artboard_1_63.webp" class="d-block w-100" alt="Macbook">
+        </div>
+        <div class="carousel-item">
+          <img src="/Frontend/Assets/desktop-macbook_ban_5.webp" class="d-block w-100" alt="Lenovo">
+        </div>
+      </div>
+    </div>
+  </div>
+   </div>
+    
+<!--****Deals Section******-->   
+    <!-- Large screen layout -->
+
+  <div class="container d-none d-md-block">
+    <div class="row justify-content-center mt-5 text-center">
+      <div class="col-md-1 me-5">
+        <div class="circle-container d-flex flex-column align-items-center">
+          <div class="circle">
+            <a href="#" class="inner-button" style="font-size: 2.5rem"
+              ><i class="bi bi-apple text-dark"></i
+            ></a>
+          </div>
+          <p class="title text-dark fs-5 text-center">Brands</p>  
+        </div>
+      </div>
+      <div class="col-md-1 me-5">
+        <div class="circle-container d-flex flex-column align-items-center">
+        <div class="circle">
+          <a href="#" class="inner-button" style="font-size: 2.5rem"
+            ><i class="bi bi-laptop text-dark"></i
+          ></a>
+        </div>
+        <p class="title text-dark fs-5 text-center">Laptops</p>
+      </div>
+      </div>
+      <div class="col-md-1 me-5">
+        <div class="circle-container d-flex flex-column align-items-center">
+        <div class="circle">
+          <a href="#" class="inner-button" style="font-size: 2.5rem"
+            ><i class="bi bi-phone text-dark"></i
+          ></a>
+        </div>
+        <p class="title text-dark fs-5 text-center">Mobiles</p>
+      </div>
+      </div>
+      <div class="col-md-1 me-5">
+        <div class="circle-container d-flex flex-column align-items-center">
+        <div class="circle">
+          <a href="#" class="inner-button" style="font-size: 2.5rem"
+            ><i class="bi bi-pc-display-horizontal text-dark"></i
+          ></a>
+        </div>
+        <p class="title text-dark fs-5 text-center">Desktops</p>
+        </div>
+      </div>
+      <div class="col-md-1 me-5">
+        <div class="circle-container d-flex flex-column align-items-center">
+        <div class="circle">
+          <a href="#" class="inner-button" style="font-size: 2.5rem"
+            ><i class="bi bi-controller text-dark"></i
+          ></a>
+        </div>
+        <p class="title text-dark fs-5 text-center">Gaming</p>
+        </div>
+      </div>
+      <div class="col-md-1 me-5">
+        <div class="circle-container d-flex flex-column align-items-center">
+        <div class="circle">
+          <a href="#" class="inner-button" style="font-size: 2.5rem"
+            ><i class="bi bi-earbuds text-dark"></i
+          ></a>
+        </div>
+        <p class="title text-dark fs-5 text-center">Accessories</p>
+        </div>
+      </div>
+      <div class="col-md-1 me-5">
+        <div class="circle-container d-flex flex-column align-items-center">
+        <div class="circle">
+          <a href="#" class="inner-button" style="font-size: 2.5rem"
+            ><i class="bi bi-printer text-dark"></i
+          ></a>
+        </div>
+        <p class="title text-dark fs-5 text-center">Printers</p>
+        </div>
+      </div>
+      <div class="col-md-1">
+        <div class="circle-container d-flex flex-column align-items-center">
+        <div class="circle">
+          <a href="#" class="inner-button" style="font-size: 2.5rem"
+            ><i class="bi bi-router"></i></a>
+        </div>
+        <p class="title text-dark fs-5 text-center">Gadgets</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Small screen layout with carousel -->
+
+  <div class="container d-md-none mt-2">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row justify-content-center mt-4 text-center">
+                    <div class="col-6 col-md-4 mb-4">
+                        <div class="circle-container d-flex flex-column align-items-center">
+                            <div class="circle">
+                                <a href="#" class="inner-button" style="font-size: 2.5rem">
+                                    <i class="bi bi-apple text-dark"></i>
+                                </a>
+                            </div>
+                            <p class="title text-dark fs-5">Brands</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 mb-4">
+                        <div class="circle-container d-flex flex-column align-items-center">
+                            <div class="circle">
+                                <a href="#" class="inner-button" style="font-size: 2.5rem">
+                                    <i class="bi bi-laptop text-dark"></i>
+                                </a>
+                            </div>
+                            <p class="title text-dark fs-5">Laptops</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row justify-content-center mt-4 text-center">
+                    <div class="col-6 col-md-4 mb-4">
+                        <div class="circle-container d-flex flex-column align-items-center">
+                            <div class="circle">
+                                <a href="#" class="inner-button" style="font-size: 2.5rem">
+                                    <i class="bi bi-phone text-dark"></i>
+                                </a>
+                            </div>
+                            <p class="title text-dark fs-5">Mobiles</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 mb-4">
+                        <div class="circle-container d-flex flex-column align-items-center">
+                            <div class="circle">
+                                <a href="#" class="inner-button" style="font-size: 2.5rem">
+                                    <i class="bi bi-pc-display-horizontal text-dark"></i>
+                                </a>
+                            </div>
+                            <p class="title text-dark fs-5">Desktops</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Add additional carousel items here for more sets of circles -->
+            <div class="carousel-item">
+              <div class="row justify-content-center mt-4 text-center">
+                  <div class="col-6 col-md-4 mb-4">
+                      <div class="circle-container d-flex flex-column align-items-center">
+                          <div class="circle">
+                              <a href="#" class="inner-button" style="font-size: 2.5rem">
+                                <i class="bi bi-controller text-dark"></i>
+                              </a>
+                          </div>
+                          <p class="title text-dark fs-5">Gaming</p>
+                      </div>
+                  </div>
+                  <div class="col-6 col-md-4 mb-4">
+                      <div class="circle-container d-flex flex-column align-items-center">
+                          <div class="circle">
+                              <a href="#" class="inner-button" style="font-size: 2.5rem">
+                                <i class="bi bi-earbuds text-dark"></i>
+                              </a>
+                          </div>
+                          <p class="title text-dark fs-5">Accessories</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- Add additional carousel items here for more sets of circles -->
+          <div class="carousel-item">
+            <div class="row justify-content-center mt-4 text-center">
+                <div class="col-6 col-md-4 mb-4">
+                    <div class="circle-container d-flex flex-column align-items-center">
+                        <div class="circle">
+                            <a href="#" class="inner-button" style="font-size: 2.5rem">
+                              <i class="bi bi-printer text-dark"></i>
+                            </a>
+                        </div>
+                        <p class="title text-dark fs-5">Printers</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 mb-4">
+                    <div class="circle-container d-flex flex-column align-items-center">
+                        <div class="circle">
+                            <a href="#" class="inner-button" style="font-size: 2.5rem">
+                              <i class="bi bi-earbuds text-dark"></i>
+                            </a>
+                        </div>
+                        <p class="title text-dark fs-5">Gadgets</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- Previous and Next buttons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+  <!--****Best Seller Section****-->
+    <div class="container mt-5">
+      <div class="d-flex justify-content-between align-items-center mb-2">
+        <div class="d-flex align-items-center">
+          <h2 class="text-dark">Best Seller</h2>
+        </div>
+        <button class="btn bg-danger text-white">View All</button>
+        
+      </div>
+      <div id="bestSellerCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row g-4 row-cols-lg-4 row-cols-2 row-cols-md-3">
+              <!-- Product Cards -->
+              <div class="col">
+                <div class="card card-product position-relative" style="border-color: rgba(220, 220, 220, 0.474);">
+                  <div class="position-absolute top-0 end-0">
+                    <span class="badge"><img src="/Frontend/Assets/dellicon.png" class="img-fluid" style="max-width: 70px; max-height: 70px;"/></span>
+                  </div>
+                  <div class="card-body">
+                    <div class="text-center">
+                      <a href="#!"
+                        ><img
+                          src="/Frontend/Assets/icon.webp"
+                          alt="Product Image"
+                          class="mb-2 img-fluid"
+                      /></a>
+                      <div class="card-product-action d-flex justify-content-center align-items-center">
+                        <a href="#!" class="btn-action" data-bs-toggle="modal" data-bs-target="#quickViewModal">
+                            <i class="bi bi-eye me-1"></i>
+                        </a>
+                        <a href="../pages/shop-wishlist.html" class="btn-action" data-bs-toggle="tooltip" data-bs-html="true" aria-label="Wishlist" data-bs-original-title="Wishlist">
+                            <i class="bi bi-heart me-1"></i>
+                        </a>
+                        <a href="#!" class="btn-action" data-bs-toggle="tooltip" data-bs-html="true" aria-label="Compare" data-bs-original-title="Compare">
+                            <i class="bi bi-arrow-left-right"></i>
+                        </a>
+                    </div>
+                    
+                    
+                    </div>
+                    <div class="text-small mb-1">
+                      <a href="#!" class="text-decoration-none text-muted"
+                        ><small>Dell Products</small></a
+                      >
+                    </div>
+                    <h2 class="fs-6" style="min-height: 38px;">
+                      <a href="#!" class="text-inherit text-decoration-none"
+                        >Dell C2423H 24-inch Monitor</a
+                      >
+                    </h2>
+                    <div>
+                      <small class="text-warning">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                      </small>
+                      <span class="text-muted small">(900)</span>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center mt-3"
+                    >
+                      <div>
+                        <span class="text-dark">KWD 67.5</span>
+                        
+                      </div>
+                      <div>
+                        <a href="#!" class="btn btn-light btn-lg">
+                          <i class="bi bi-cart"></i>
+                        </a>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+            
+              </div>
+              <div class="col">
+                <div class="card card-product position-relative" style="border-color: rgba(220, 220, 220, 0.474);">
+                  <div class="position-absolute top-0 end-0">
+                    <span class="badge"><img src="/Frontend/Assets/lenovo.png" class="img-fluid mt-4" style="max-width: 80px; max-height: 100px;"/></span>
+                  </div>
+                  <div class="card-body">
+                    <div class="text-center">
+                      <a href="#!"
+                        ><img
+                          src="/Frontend/Assets/legion.webp"
+                          alt="Product Image"
+                          class="mb-2 img-fluid"
+                      /></a>
+                      <div class="card-product-action d-flex justify-content-center align-items-center">
+                        <a href="#!" class="btn-action" data-bs-toggle="modal" data-bs-target="#quickViewModal">
+                            <i class="bi bi-eye me-1"></i>
+                        </a>
+                        <a href="../pages/shop-wishlist.html" class="btn-action" data-bs-toggle="tooltip" data-bs-html="true" aria-label="Wishlist" data-bs-original-title="Wishlist">
+                            <i class="bi bi-heart me-1"></i>
+                        </a>
+                        <a href="#!" class="btn-action" data-bs-toggle="tooltip" data-bs-html="true" aria-label="Compare" data-bs-original-title="Compare">
+                            <i class="bi bi-arrow-left-right"></i>
+                        </a>
+                    </div>
+                    
+                    
+                    </div>
+                    <div class="text-small mb-1">
+                      <a href="#!" class="text-decoration-none text-muted"
+                        ><small>Lenovo Products</small></a
+                      >
+                    </div>
+                    <h2 class="fs-6" style="min-height: 38px;">
+                      <a href="#!" class="text-inherit text-decoration-none"
+                        >Lenovo Legion Go - 8.8</a
+                      >
+                    </h2>
+                    <div>
+                      <small class="text-warning">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                        <i class="bi bi-star"></i>
+                      </small>
+                      <span class="text-muted small">(680)</span>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center mt-3"
+                    >
+                      <div>
+                        <span class="text-dark">KWD 229</span>
+                        
+                      </div>
+                      <div>
+                        <a href="#!" class="btn btn-light btn-lg">
+                          <i class="bi bi-cart"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+              </div>
+              <div class="col">
+                <div class="card card-product position-relative" style="border-color: rgba(220, 220, 220, 0.474);">
+                  <div class="position-absolute top-0 end-0">
+                    <span class="badge"><img src="/Frontend/Assets/hp.png" class="img-fluid mt-4" style="max-width: 40px; max-height: 40px;"/></span>
+                  </div>
+                  <div class="card-body">
+                    <div class="text-center">
+                      <a href="#!"
+                        ><img
+                          src="/Frontend/Assets/tricolor.jpg"
+                          alt="Product Image"
+                          class="mb-2 img-fluid"
+                      /></a>
+                      <div class="card-product-action d-flex justify-content-center align-items-center">
+                        <a href="#!" class="btn-action" data-bs-toggle="modal" data-bs-target="#quickViewModal">
+                            <i class="bi bi-eye me-1"></i>
+                        </a>
+                        <a href="#!" class="btn-action" data-bs-toggle="tooltip" data-bs-html="true" aria-label="Wishlist" data-bs-original-title="Wishlist">
+                            <i class="bi bi-heart me-1"></i>
+                        </a>
+                        <a href="#!" class="btn-action" data-bs-toggle="tooltip" data-bs-html="true" aria-label="Compare" data-bs-original-title="Compare">
+                            <i class="bi bi-arrow-left-right"></i>
+                        </a>
+                    </div>
+                    
+                    
+                    </div>
+                    <div class="text-small mb-1">
+                      <a href="#!" class="text-decoration-none text-muted"
+                        ><small>HP Products</small></a
+                      >
+                    </div>
+                    <h2 class="fs-6" style="min-height: 38px;">
+                      <a href="#!" class="text-inherit text-decoration-none"
+                        >HP 123 Tri-color Ink Cartridge</a
+                      >
+                    </h2>
+                    <div>
+                      <small class="text-warning">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                      </small>
+                      <span class="text-muted small">(880)</span>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center mt-3"
+                    >
+                      <div>
+                        <span class="text-dark">KWD 4.25</span>
+                        
+                      </div>
+                      <div>
+                        <a href="#!" class="btn btn-light btn-lg">
+                          <i class="bi bi-cart"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+              </div>
+              <div class="col">
+                <div class="card card-product position-relative" style="border-color: rgba(220, 220, 220, 0.474);">
+                  <div class="position-absolute top-0 end-0">
+                    <span class="badge"><img src="/Frontend/Assets/samsung.png" class="img-fluid mt-4" style="max-width: 60px; max-height: 60px;"/></span>
+                  </div>
+                  <div class="card-body">
+                    <div class="text-center">
+                      <a href="#!"
+                        ><img
+                          src="/Frontend/Assets/S23ULTRA.webp"
+                          alt="Product Image"
+                          class="mb-2 img-fluid"
+                      /></a>
+                      <div class="card-product-action d-flex justify-content-center align-items-center">
+                        <a href="#!" class="btn-action" data-bs-toggle="modal" data-bs-target="#quickViewModal">
+                            <i class="bi bi-eye me-1"></i>
+                        </a>
+                        <a href="#!" class="btn-action" data-bs-toggle="tooltip" data-bs-html="true" aria-label="Wishlist" data-bs-original-title="Wishlist">
+                            <i class="bi bi-heart me-1"></i>
+                        </a>
+                        <a href="#!" class="btn-action" data-bs-toggle="tooltip" data-bs-html="true" aria-label="Compare" data-bs-original-title="Compare">
+                            <i class="bi bi-arrow-left-right"></i>
+                        </a>
+                    </div>
+                    
+                    
+                    </div>
+                    <div class="text-small mb-1">
+                      <a href="#!" class="text-decoration-none text-muted"
+                        ><small>Samsung Products</small></a
+                      >
+                    </div>
+                    <h2 class="fs-6" style="min-height: 38px;">
+                      <a href="#!" class="text-inherit text-decoration-none"
+                        >Samsung Galaxy S23 Ultra </a
+                      >
+                    </h2>
+                    <div>
+                      <small class="text-warning">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star"></i>
+                      </small>
+                      <span class="text-muted small">(720)</span>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center mt-3"
+                    >
+                      <div>
+                        <span class="text-dark">KWD 239.9</span>
+                        
+                      </div>
+                      <div>
+                        <a href="#!" class="btn btn-light btn-lg">
+                          <i class="bi bi-cart"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row g-4 row-cols-lg-4 row-cols-2 row-cols-md-3">
+              <div class="col">
+                <div class="card card-product position-relative" style="border-color: rgba(220, 220, 220, 0.474);">
+                  <div class="position-absolute top-0 end-0 mt-3">
+                    <span class="badge"><img src="/Frontend/Assets/apple.png" class="img-fluid" style="max-width: 40px; max-height: 40px;"/></span>
+                  </div>
+                  <div class="card-body">
+                    <div class="text-center">
+                      <a href="#!"
+                        ><img
+                          src="/Frontend/Assets/ipad.webp"
+                          alt="Product Image"
+                          class="mb-2 img-fluid"
+                      /></a>
+                      <div class="card-product-action d-flex justify-content-center align-items-center">
+                        <a href="#!" class="btn-action btn-circle" data-bs-toggle="modal" data-bs-target="#quickViewModal">
+                            <i class="bi bi-eye"></i>
+                        </a>
+                        <a href="#!" class="btn-action btn-circle" data-bs-toggle="tooltip" data-bs-html="true" aria-label="Wishlist" data-bs-original-title="Wishlist">
+                            <i class="bi bi-heart"></i>
+                        </a>
+                        <a href="#!" class="btn-action btn-circle" data-bs-toggle="tooltip" data-bs-html="true" aria-label="Compare" data-bs-original-title="Compare">
+                            <i class="bi bi-arrow-left-right"></i>
+                        </a>
+                    </div>
+                    
+                    
+                    </div>
+                    <div class="text-small mb-1">
+                      <a href="#!" class="text-decoration-none text-muted"
+                        ><small>Apple Products</small></a
+                      >
+                    </div>
+                    <h2 class="fs-6" style="min-height: 38px;">
+                      <a href="#!" class="text-inherit text-decoration-none"
+                        >Apple iPad Pro (2022)</a
+                      >
+                    </h2>
+                    <div>
+                      <small class="text-warning">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                      </small>
+                      <span class="text-muted small">(850)</span>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center mt-3"
+                    >
+                      <div>
+                        <span class="text-dark">KWD 224.9</span>
+                        
+                      </div>
+                      <div>
+                        <a href="#!" class="btn btn-light btn-lg">
+                          <i class="bi bi-cart"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              
+              </div>
+              <div class="col">
+                <div class="card card-product position-relative" style="border-color: rgba(220, 220, 220, 0.474);">
+                  <div class="position-absolute top-0 end-0 mt-3">
+                    <span class="badge"><img src="/Frontend/Assets/micro.jpg" class="img-fluid" style="max-width: 100px; max-height: 100px;"/></span>
+                  </div>
+                  <div class="card-body">
+                    <div class="text-center">
+                      <a href="#!"
+                        ><img
+                          src="/Frontend/Assets/laptop.webp"
+                          alt="Product Image"
+                          class="mb-2 img-fluid"
+                      /></a>
+                      <div class="card-product-action d-flex justify-content-center align-items-center">
+                        <a href="#!" class="btn-action" data-bs-toggle="modal" data-bs-target="#quickViewModal">
+                            <i class="bi bi-eye me-1"></i>
+                        </a>
+                        <a href="#!" class="btn-action" data-bs-toggle="tooltip" data-bs-html="true" aria-label="Wishlist" data-bs-original-title="Wishlist">
+                            <i class="bi bi-heart me-1"></i>
+                        </a>
+                        <a href="#!" class="btn-action" data-bs-toggle="tooltip" data-bs-html="true" aria-label="Compare" data-bs-original-title="Compare">
+                            <i class="bi bi-arrow-left-right"></i>
+                        </a>
+                    </div>
+                    
+                    
+                    </div>
+                    <div class="text-small mb-1">
+                      <a href="#!" class="text-decoration-none text-muted"
+                        ><small>Microsoft Products</small></a
+                      >
+                    </div>
+                    <h2 class="fs-6" style="min-height: 38px;">
+                      <a href="#!" class="text-inherit text-decoration-none"
+                        >Microsoft Surface Laptop 5</a
+                      >
+                    </h2>
+                    <div>
+                      <small class="text-warning">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                        <i class="bi bi-star"></i>
+                      </small>
+                      <span class="text-muted small">(650)</span>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center mt-3"
+                    >
+                      <div>
+                        <span class="text-dark">KWD 457</span>
+                        
+                      </div>
+                      <div>
+                        <a href="#!" class="btn btn-light btn-lg">
+                          <i class="bi bi-cart"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              
+              </div>
+              <div class="col">
+                <div class="card card-product position-relative" style="border-color: rgba(220, 220, 220, 0.474);">
+                  <div class="position-absolute top-0 end-0 mt-4">
+                    <span class="badge"><img src="/Frontend/Assets/anker.png" class="img-fluid" style="max-width: 70px; max-height: 70px;"/></span>
+                  </div>
+                  <div class="card-body">
+                    <div class="text-center">
+                      <a href="#!"
+                        ><img
+                          src="/Frontend/Assets/charger.webp"
+                          alt="Product Image"
+                          class="mb-2 img-fluid"
+                      /></a>
+                      <div class="card-product-action d-flex justify-content-center align-items-center">
+                        <a href="#!" class="btn-action" data-bs-toggle="modal" data-bs-target="#quickViewModal">
+                            <i class="bi bi-eye me-1"></i>
+                        </a>
+                        <a href="#!" class="btn-action" data-bs-toggle="tooltip" data-bs-html="true" aria-label="Wishlist" data-bs-original-title="Wishlist">
+                            <i class="bi bi-heart me-1"></i>
+                        </a>
+                        <a href="#!" class="btn-action" data-bs-toggle="tooltip" data-bs-html="true" aria-label="Compare" data-bs-original-title="Compare">
+                            <i class="bi bi-arrow-left-right"></i>
+                        </a>
+                    </div>
+                    
+                    
+                    </div>
+                    <div class="text-small mb-1">
+                      <a href="#!" class="text-decoration-none text-muted"
+                        ><small>Anker Products</small></a
+                      >
+                    </div>
+                    <h2 class="fs-6" style="min-height: 38px;">
+                      <a href="#!" class="text-inherit text-decoration-none"
+                        >Anker 511 Charger (Nano 3, 30W)</a
+                      >
+                    </h2>
+                    <div>
+                      <small class="text-warning">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                      </small>
+                      <span class="text-muted small">(530)</span>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center mt-3"
+                    >
+                      <div>
+                        <span class="text-dark">KWD 8</span>
+                        
+                      </div>
+                      <div>
+                        <a href="#!" class="btn btn-light btn-lg">
+                          <i class="bi bi-cart"></i>
+                        </a>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              
+              </div>
+              <div class="col">
+                <div class="card card-product position-relative" style="border-color: rgba(220, 220, 220, 0.474);">
+                  <div class="position-absolute top-0 end-0 mt-4">
+                    <span class="badge"><img src="/Frontend/Assets/xiaomi.png" class="img-fluid" style="max-width: 40px; max-height: 40px;"/></span>
+                  </div>
+                  <div class="card-body">
+                    <div class="text-center">
+                      <a href="#!"
+                        ><img
+                          src="/Frontend/Assets/camera.webp"
+                          alt="Product Image"
+                          class="mb-2 img-fluid"
+                      /></a>
+                      <div class="card-product-action d-flex justify-content-center align-items-center">
+                        <a href="#!" class="btn-action" data-bs-toggle="modal" data-bs-target="#quickViewModal">
+                            <i class="bi bi-eye me-1"></i>
+                        </a>
+                        <a href="#!" class="btn-action" data-bs-toggle="tooltip" data-bs-html="true" aria-label="Wishlist" data-bs-original-title="Wishlist">
+                            <i class="bi bi-heart me-1"></i>
+                        </a>
+                        <a href="#!" class="btn-action" data-bs-toggle="tooltip" data-bs-html="true" aria-label="Compare" data-bs-original-title="Compare">
+                            <i class="bi bi-arrow-left-right"></i>
+                        </a>
+                    </div>
+                    
+                    
+                    </div>
+                    <div class="text-small mb-1">
+                      <a href="#!" class="text-decoration-none text-muted"
+                        ><small>Xiaomi Products</small></a
+                      >
+                    </div>
+                    <h2 class="fs-6" style="min-height: 38px;">
+                      <a href="#!" class="text-inherit text-decoration-none"
+                        >Xiaomi Mi Dash Cam 2</a
+                      >
+                    </h2>
+                    <div>
+                      <small class="text-warning">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star"></i>
+                      </small>
+                      <span class="text-muted small">(910)</span>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center mt-3"
+                    >
+                      <div>
+                        <span class="text-dark">KWD 19.9</span>
+                        
+                      </div>
+                      <div>
+                        <a href="#!" class="btn btn-light btn-lg">
+                          <i class="bi bi-cart"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#bestSellerCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#bestSellerCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    
+
+    <!--****Top Offers Section****-->
+    <div class="container mt-5">
+      <div class="d-flex justify-content-between align-items-center mb-2">
+        <div class="d-flex align-items-center"> <!-- New div for image and heading -->
+            <img src="/Frontend/Assets/percentage_10786110.png" style="max-width: 70px; max-height: 70px;" class="mr-2 mb-2"/>
+            <h2 class="text-dark ms-2">Top Offers</h2>
+        </div>
+        <button class="btn bg-danger text-white">View All</button>
+     </div>
+    
+      <div class="row g-4 row-cols-lg-4 row-cols-2 row-cols-md-3" >
+        <div class="col">
+          <div class="card card-product" style="border-color: rgba(220, 220, 220, 0.474);">
+            <div class="card-body">
+              <div class="text-center position-relative">
+                <div class="position-absolute top-0 start-0">
+                  <span class="badge bg-danger">Sale</span>
+                </div>
+                <a href="#!"
+                  ><img
+                    src="Assets/buy-xiaomi-mi-tv-stick-8gb-hdmi-micro-usb-wi-fi-bluetooth-black-wibi-want-it-buy-it-kuwait-445742.webp"
+                    alt="Product Image"
+                    class="mb-2 img-fluid"
+                /></a>
+                <div class="card-product-action">
+                  <a
+                    href="#!"
+                    class="btn-action me-2"
+                    data-bs-toggle="modal"
+                    data-bs-target="#quickViewModal"
+                  >
+                    <i
+                      class="bi bi-eye"
+                      data-bs-toggle="tooltip"
+                      data-bs-html="true"
+                      aria-label="Quick View"
+                      data-bs-original-title="Quick View"
+                    ></i>
+                  </a>
+                  <a
+                    href="#!"
+                    class="btn-action me-2"
+                    data-bs-toggle="tooltip"
+                    data-bs-html="true"
+                    aria-label="Wishlist"
+                    data-bs-original-title="Wishlist"
+                    ><i class="bi bi-heart"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="text-small mb-1">
+                <a href="#!" class="text-decoration-none text-muted"
+                  ><small>Xiaomi Products</small></a
+                >
+              </div>
+              <h2 class="fs-6" style="min-height: 38px;">
+                <a href="#!" class="text-inherit text-decoration-none"
+                  >Xiaomi Mi TV Stick</a
+                >
+              </h2>
+              <div>
+                <small class="text-warning">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                </small>
+                <span class="text-muted small">(149)</span>
+              </div>
+              <div
+                class="d-flex justify-content-between align-items-center mt-3"
+              >
+                <div class="d-flex flex-column">
+                  <span class="text-dark">KWD 18</span>
+                  <span class="text-decoration-line-through text-muted small"
+                    >KWD 24</span
+                  >
+                </div>
+                <div>
+                  <a href="#!" class="btn btn-light btn-lg">
+                    <i class="bi bi-cart"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card-product" style="border-color: rgba(220, 220, 220, 0.474);">
+            <div class="card-body">
+              <div class="text-center position-relative">
+                <div class="position-absolute top-0 start-0">
+                  <span class="badge bg-danger">-24%</span>
+                </div>
+                <a href="#!"
+                  ><img
+                    src="Assets/watchhuw.webp"
+                    alt="Product Image"
+                    class="mb-2 img-fluid"
+                /></a>
+                <div class="card-product-action">
+                  <a
+                    href="#!"
+                    class="btn-action me-2"
+                    data-bs-toggle="modal"
+                    data-bs-target="#quickViewModal"
+                  >
+                    <i
+                      class="bi bi-eye"
+                      data-bs-toggle="tooltip"
+                      data-bs-html="true"
+                      aria-label="Quick View"
+                      data-bs-original-title="Quick View"
+                    ></i>
+                  </a>
+                  <a
+                    href="#!"
+                    class="btn-action me-2"
+                    data-bs-toggle="tooltip"
+                    data-bs-html="true"
+                    aria-label="Wishlist"
+                    data-bs-original-title="Wishlist"
+                    ><i class="bi bi-heart"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="text-small mb-1">
+                <a href="#!" class="text-decoration-none text-muted"
+                  ><small>Huawei Products</small></a
+                >
+              </div>
+              <h2 class="fs-6" style="min-height: 38px;">
+                <a href="#!" class="text-inherit text-decoration-none"
+                  >Huawei Watch Fit 2 Active Edition</a
+                >
+              </h2>
+              <div>
+                <small class="text-warning">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                  <i class="bi bi-star"></i>
+                </small>
+                <span class="text-muted small">(100)</span>
+              </div>
+              <div
+                class="d-flex justify-content-between align-items-center mt-3"
+              >
+                <div class="d-flex flex-column">
+                  <span class="text-dark">KWD 22.9</span>
+                  <span class="text-decoration-line-through text-muted small">KWD 29</span>
+                </div>
+                <div>
+                  <a href="#!" class="btn btn-light btn-lg">
+                   
+                    <i class="bi bi-cart"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card-product" style="border-color: rgba(220, 220, 220, 0.474);">
+            <div class="card-body">
+              <div class="text-center position-relative">
+                <div class="position-absolute top-0 start-0">
+                  <span class="badge bg-danger">Hot</span>
+                </div>
+                <a href="#!"
+                  ><img
+                    src="Assets/iphone-15-pro-max.webp"
+                    alt="Product Image"
+                    class="mb-2 img-fluid"
+                /></a>
+                <div class="card-product-action">
+                  <a
+                    href="#!"
+                    class="btn-action me-2"
+                    data-bs-toggle="modal"
+                    data-bs-target="#quickViewModal"
+                  >
+                    <i
+                      class="bi bi-eye"
+                      data-bs-toggle="tooltip"
+                      data-bs-html="true"
+                      aria-label="Quick View"
+                      data-bs-original-title="Quick View"
+                    ></i>
+                  </a>
+                  <a
+                    href="#!"
+                    class="btn-action me-2"
+                    data-bs-toggle="tooltip"
+                    data-bs-html="true"
+                    aria-label="Wishlist"
+                    data-bs-original-title="Wishlist"
+                    ><i class="bi bi-heart"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="text-small mb-1">
+                <a href="#!" class="text-decoration-none text-muted"
+                  ><small>Apple Products</small></a
+                >
+              </div>
+              <h2 class="fs-6" style="min-height: 38px;">
+                <a href="#!" class="text-inherit text-decoration-none"
+                  >Apple iPhone 15 Pro Max</a
+                >
+              </h2>
+              <div>
+                <small class="text-warning">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </small>
+                <span class="text-muted small">(450)</span>
+              </div>
+              <div
+                class="d-flex justify-content-between align-items-center mt-3"
+              >
+                <div class="d-flex flex-column">
+                  <span class="text-dark">KWD 469</span>
+                  <span class="text-decoration-line-through text-muted small"
+                    >KWD 520</span
+                  >
+                </div>
+                <div>
+                  <a href="#!" class="btn btn-light btn-lg">
+                    <i class="bi bi-cart"></i>
+                    
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card-product" style="border-color: rgba(220, 220, 220, 0.474);">
+            <div class="card-body">
+              <div class="text-center position-relative">
+                <div class="position-absolute top-0 start-0">
+                  <span class="badge bg-danger">-2%</span>
+                </div>
+                <a href="#!"
+                  ><img
+                    src="Assets/screwdriver.webp"
+                    alt="Product Image"
+                    class="mb-2 img-fluid"
+                /></a>
+                <div class="card-product-action">
+                  <a
+                    href="#!"
+                    class="btn-action me-2"
+                    data-bs-toggle="modal"
+                    data-bs-target="#quickViewModal"
+                  >
+                    <i
+                      class="bi bi-eye"
+                      data-bs-toggle="tooltip"
+                      data-bs-html="true"
+                      aria-label="Quick View"
+                      data-bs-original-title="Quick View"
+                    ></i>
+                  </a>
+                  <a
+                    href="#!"
+                    class="btn-action me-2"
+                    data-bs-toggle="tooltip"
+                    data-bs-html="true"
+                    aria-label="Wishlist"
+                    data-bs-original-title="Wishlist"
+                    ><i class="bi bi-heart"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="text-small mb-1">
+                <a href="#!" class="text-decoration-none text-muted"
+                  ><small>Xiaomi Products</small></a
+                >
+              </div>
+              <h2 class="fs-6" style="min-height: 38px;">
+                <a href="#!" class="text-inherit text-decoration-none"
+                  >Xiaomi Cordless Screwdriver</a
+                >
+              </h2>
+              <div>
+                <small class="text-warning">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i>
+                </small>
+                <span class="text-muted small">(200)</span>
+              </div>
+              <div
+                class="d-flex justify-content-between align-items-center mt-3"
+              >
+                <div class="d-flex flex-column">
+                  <span class="text-dark">KWD 9.75</span>
+                  <span class="text-decoration-line-through text-muted small"
+                    >KWD 9.9</span
+                  >
+                </div>
+                <div>
+                  <a href="#!" class="btn btn-light btn-lg">
+                    <i class="bi bi-cart"></i>
+                    
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- You can repeat this column for each product -->
+      </div>
+    </div>
+
+    <!--****Top Brands Section****-->
+    <div class="container rounded mt-5 ">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+          <h2 class="text-dark">Top Brands</h2>
+      </div>
+      <div id="carouselControls" class="carousel slide d-none d-md-block" data-bs-ride="carousel" style="min-height: 125px;">
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <div class="row justify-content-center align-items-center">
+                      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                          <div class="service-info">
+                              <a href="#">
+                                  <img class="mb-2 mx-auto" width="70px" src="Assets/apple.png" />
+                              </a>
+                          </div>
+                      </div>
+                      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <div class="service-info">
+                            <a href="#">
+                                <img class="mb-2 mx-auto" width="130px" src="Assets/samsung.png" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                      <div class="service-info">
+                          <a href="#">
+                              <img class="mb-2 mx-auto" width="90px" src="Assets/huawei.png" />
+                          </a>
+                      </div>
+                  </div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="service-info">
+                        <a href="#">
+                            <img class="mb-2 mx-auto" width="80px" src="Assets/xiaomi.png" />
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                  <div class="service-info">
+                      <a href="#">
+                          <img class="mb-2 mx-auto" width="150px" src="Assets/micro.jpg" />
+                      </a>
+                  </div>
+                </div>
+                
+                      <!-- Add more columns with brand logos here -->
+               </div>
+              </div>
+              <!-- Add additional carousel items if needed -->
+              <div class="carousel-item">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                        <div class="service-info">
+                            <a href="#">
+                                <img class="mb-2 mx-auto" width="100px" src="Assets/dell.jpg" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                      <div class="service-info">
+                          <a href="#">
+                              <img class="mb-2 mx-auto" width="70px" src="Assets/hp.png" />
+                          </a>
+                      </div>
+                  </div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="service-info">
+                        <a href="#">
+                            <img class="mb-2 mx-auto" width="100px" src="Assets/lenovo.png" />
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                  <div class="service-info">
+                      <a href="#">
+                          <img class="mb-2 mx-auto" width="130px" src="Assets/powerology.png" />
+                      </a>
+                  </div>
+              </div>
+              <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <div class="service-info">
+                    <a href="#">
+                        <img class="mb-2 mx-auto" width="100px" src="Assets/ldnio.png" />
+                    </a>
+                </div>
+              </div>
+              
+                    <!-- Add more columns with brand logos here -->
+             </div>
+            </div>
+          </div>
+          <!-- Carousel controls -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+          </button>
+      </div>
+      <div class="d-block d-sm-none">
+        <img src="Assets/brands.png" class="img-fluid"/>
+      </div>
+   </div>
+  
+   <!--***Customer Reviews***-->
+   <!--***Footer***-->
+   <section id="newsletter-section" class="spaced-section bg-secondary-subtle mt-5">
+    <div class="container">
+        <div class="row py-3">
+            <div class="col-lg-6 col-md-6 col-sm-12 d-flex align-items-center">
+                <h6 class="newsletter-title text-muted me-3">NEWSLETTER SIGNUP:</h6>
+                
+                <form method="post" action="/contact#contact_form" id="contact_form" accept-charset="UTF-8" class="newsletter-form me-3">
+                    <input type="hidden" name="form_type" value="customer">
+                    <input type="hidden" name="utf8" value="✓">
+                    <div class="input-group">
+                        <input type="email" name="contact[email]" class="form-control" placeholder="Enter your e-mail" required="" style="max-width: 900px;">
+                        <button type="submit" class="btn btn-danger z-1" style="margin-left: -2px;">SUBSCRIBE</button>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="col-lg-6 col-md-6 col-sm-12 d-flex align-items-center justify-content-end">
+                <ul class="social-icons list-inline mb-0 me-4">
+                    <li class="list-inline-item me-3"><a href="#"><i class="bi bi-facebook text-muted"></i></a></li>
+                    <li class="list-inline-item me-3"><a href="#"><i class="bi bi-instagram text-muted"></i></a></li>
+                    <li class="list-inline-item me-3"><a href="#"><i class="bi bi-youtube text-muted"></i></a></li>
+                    <li class="list-inline-item me-3"><a href="#"><i class="bi bi-whatsapp text-muted"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="bi bi-tiktok text-muted"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <footer class="footer bg-body-tertiary">
+    <div class="container">
+        <div class="row py-5">
+            <div class="col-lg-3">
+                <h6 class="footer-heading">INFORMATION</h6>
+                <ul class="footer-menu">
+                    <li><a href="/pages/about-us">About Us</a></li>
+                    <li><a href="/pages/contact-us">Contact Us</a></li>
+                    <li><a href="/policies/terms-of-service">Terms of Service</a></li>
+                    <li><a href="/policies/refund-policy">Refund Policy</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3">
+                <h6 class="footer-heading">OUR POLICY</h6>
+                <ul class="footer-menu">
+                    <li><a href="/pages/sell-on-wibi">Sell On Smart Village</a></li>
+                    <li><a href="/pages/terms-of-use">Terms Of Use</a></li>
+                    <li><a href="/pages/privacy-policy">Privacy Policy</a></li>
+                    <li><a href="/blogs/deals-and-offers-in-kuwait">Blog</a></li>
+                    <li><a href="/pages/reward-points-policy/">Smart Village Rewards Policy</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3">
+                <h6 class="footer-heading">DOWNLOAD OUR APP</h6>
+                <ul class="app-stores-icons">
+                    <li><a href="#"><img src="https://cdn.shopify.com/s/files/1/0577/7371/9758/files/ios_01.png?v=1624876320" alt="IOS App store"></a></li>
+                    <li><a href="#"><img src="https://cdn.shopify.com/s/files/1/0577/7371/9758/files/Google_01.png?v=1624876321" alt="Android app store"></a></li>
+                    <li><a href="#"><img src="https://cdn.shopify.com/s/files/1/0577/7371/9758/files/Huawei_01.png?v=1624876320" alt="Huawei app store"></a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3">   
+                <ul class="contact-information">
+                    <li><strong>Pickup Location:</strong> Shop 1 & 2, Al Mulla Commercial Complex, Ground Floor, Ibn Khaldoun Street, Hawally, Kuwait.</li>
+                    <li><strong>Head Office:</strong> 49 Floor, Arraya Tower, Kuwait City, Kuwait</li>
+                    <li><strong>Customer Support:</strong> <a href="tel:1807934">1807934</a></li>
+                    <li><strong>Email:</strong> <a href="mailto:info@Smart Village.com.kw">info@smartvillage.com.kw</a></li>
+                </ul>
+                <img src="/Frontend/Assets/footer_icons_updated.avif" style="width: 100%; max-width: 350px; margin-left: 22px;">
+            </div>
+        </div>
+    </div>
+    <hr/>
+    <div class="footer-bottom">
+        <div class="container d-flex justify-content-center">
+            <div class="row">
+                <div class="col-12">
+                  © Smart Village.com.kw 2024. All Rights Reserved.
+                </div>
+            </div>
+        </div>
+    </div>
+</footer> 
+
+   <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-H5aYYdhyfWTUHcBfjH1GZlGDKEpLymMa1riPjPxSsP8yA+EuIfs8BxiicF1rxt6W" crossorigin="anonymous">
+   </script>
+   
+   <script
+   src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+   integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+   crossorigin="anonymous"></script>
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   <script>document.addEventListener("DOMContentLoaded", function () {
+    var scrollingText = document.getElementById('scrolling-text');
+    var originalContent = scrollingText.innerHTML;
+    var repeatedContent = originalContent.repeat(5); // Repeat 3 times, adjust as needed
+    scrollingText.innerHTML = repeatedContent;
+});
+</script>
+   
+  </body>
+</html>

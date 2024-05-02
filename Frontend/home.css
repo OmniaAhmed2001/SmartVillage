@@ -1,0 +1,151 @@
+.scrolling-title {
+    width: 100%;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+  }
+  
+  .scrolling-title h6{
+    font-size: 15px;
+    animation: moveTitle 13s linear infinite;
+  }
+  
+  @keyframes moveTitle {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(100%);
+    }
+  }
+  
+
+
+
+.circle:hover {
+  transform: scale(1.1); 
+  background-color: #ffffff;
+  
+}
+
+
+
+.circle {
+  width: 80px; 
+  height: 80px; 
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.circle a {
+  color: #000;
+}
+
+p{
+  font-weight: 500;
+}
+
+
+.card-product-action {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+.card:hover .card-product-action {
+  opacity: 1;
+}
+
+.btn-action {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #828181c2; 
+  margin-right: 10px;
+  margin-bottom: 2px;
+}
+
+.btn-action:last-child {
+  margin-right: 0; 
+}
+
+.btn-action i {
+  font-size: 1rem; 
+  color: white;
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+#bestSellerCarousel .card.card-product {
+  min-height: 30vh; 
+}
+
+
+.btn btn-light btn-sm {
+  padding: 0.25rem 0.5rem; 
+  font-size: 0.870rem; 
+}
+
+.text-decoration-line-through.text-muted.small {
+  font-size: 0.75rem; 
+}
+
+
+
+/* Override Bootstrap column behavior for smaller screens */
+@media (max-width: 576px) {
+  .col-6 col-md-4 mb-4 img {
+    width: 40px; 
+}
+}
+
+.app-stores-icons {
+  list-style: none !important;
+  padding: 5px;
+  padding-left: 0;
+}
+
+.app-stores-icons img {
+  width: 140px;
+  padding: 5px;
+  padding-left: 0;
+  display: block; 
+}
+
+
+
+
+ .footer-menu {
+  padding-left: 0; 
+}
+ .footer-menu li {
+  list-style: none; 
+}
+
+.footer-menu li a {
+  color: #6C757D; 
+  text-decoration: none; 
+  transition: color 0.3s; 
+}
+
+.footer-menu li a:hover {
+  color: #DC3545; 
+}
+
+.contact-information {
+  list-style: none; 
+}
